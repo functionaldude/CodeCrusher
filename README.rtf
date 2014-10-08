@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 Description:\
+This program analyzes your C/C++ project, and helps you in many ways. Current features:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls1\ilvl0\cf0 {\listtext	\'95	}Code/Comment counter\
+{\listtext	\'95	}CodingStandard checker\
+{\listtext	\'95	}Testfile generator\
+{\listtext	\'95	}Plagiat checker (BETA!!)\
+{\listtext	\'95	}Multitasking\
+{\listtext	\'95	}Multi-Core support\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+Usage:\
+The basic usage for the program is: [program] [project_file]\
+If you are creating a new project, simply input a non-existing file, where the project file should be saved. manually editing the project file is not recommended, however if you are familiar with the structure you can try that. If a project file gets corrupted, CodeCrusher will try to fix it, sometimes it will work, sometimes not.\
+\
+Basic Commands:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls2\ilvl0\cf0 {\listtext	\'95	}list 				-> Outputs the files in the current project\
+{\listtext	\'95	}save 			-> Saves the project file\
+{\listtext	\'95	}quit	 			-> Saves the project file and quits the program\
+{\listtext	\'95	}add / remove		-> Manages files\
+{\listtext	\'95	}process [operators]	-> Processes stuff (See below for usage)\
+{\listtext	\'95	}print [operators]	-> Prints stuff (See below for usage)\
+{\listtext	\'95	}set	[operators]	-> Sets file parameters (See below for usage)\
+{\listtext	\'95	}write			-> Generates a test file (See below for usage)\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+Managing files\
+To add a file to your project type "add file", to remove a file type "remove file". To see your files use the "list" command.\
+\
+The print command\
+The print command prints various stats of a file. The most basic operator of the print command is "all". This will give you every stat of every file in your project. If you want to see the stats of your whole project you can use the "db" operator.\
+ - print [operator]\
+To get the stats of a specific file you use:\
+ - print [filename]\
+The print command is also useful when you want to use the built-in analysis engines:\
+ - print [filename] [engine]\
+There are 2 analysis engines in CodeCrusher, here is a list of the operators:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls3\ilvl0\cf0 {\listtext	\'95	}cs		-> Coding Standard Checker\
+{\listtext	\'95	}pl		-> Plagiat checker\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+The process command\
+The files won't be processed when you add them to the project, you have to use the process command:\
+ - process [operator]\
+ - process [filename] [operator]\
+Tho process the entire project, use the "db" operator. To process a singe file, type in the filename and use no operators. If your project is big, it could take a while to process every file. CodeCrusher supports multitasking, the processing function runs on a separate thread. \
+\
+The set command\
+Using the set command, you can set various file/project flags:\
+ - set [filename] [flag] [value]\
+Here is a list of flags:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural
+\ls4\ilvl0\cf0 {\listtext	\'95	}w 		-> Writable (Default: false)\
+\pard\tx560\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+The write command\
+To generate a test file, first, you have to add it to your project, use the add command. If you want to create a new file use the add command, like if the file would exist. Then, you must use the set command to set the file to writeable. After that, use the write command to generate your test file.\
+ - write [filename]\
+When writing a test file, the writer function runs on a different thread, so you can still use the program.\
+\
+Other commands:\
+To disable the autosave feature, type "disable autosave".}
