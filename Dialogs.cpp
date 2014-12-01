@@ -18,7 +18,6 @@ using std::cin;
 using std::vector;
 
 void printHelp () {
-  cout << "Usage: [program] [project_file]" << endl;
   cout << "For more information read the README." << endl;
 }
 

@@ -129,6 +129,15 @@ int main(int argc, const char * argv[]) {
       continue;
     }
     if (input_args[0] == "set") {
+      if (input_args[1] == "db") {
+        if (input_args[2] == "name") {
+          cout << "New name";
+          getline(cin, input);
+          activedb->setName(input);
+          cout << "New name: " << activedb->getName() << endl;
+          continue;
+        }
+      }
       if (checkIfFileRegistered(input_args[1], activedb) == false) {
         cout << "No such file" << endl;
         continue;

@@ -252,3 +252,7 @@ void Database::freeSpace(){
 void Database::setName(std::string input){
   name = input;
 }
+
+std::string Database::getName(){
+  return name;
+}
