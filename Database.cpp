@@ -248,3 +248,7 @@ void Database::freeSpace(){
   files.shrink_to_fit();
   access_db.unlock();
 }
+
+void Database::setName(std::string input){
+  name = input;
+}
