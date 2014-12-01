@@ -47,6 +47,7 @@ public:
   bool getSaveStatus();
   bool getWriteStatus();
   File* getFile(std::string searched);
+  std::string getName();
 
   //setters
   void setName(std::string);

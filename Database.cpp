@@ -212,6 +212,9 @@ void Database::save(){
 }
 
 File * Database::getFile(string searched){
+  if (files.size() == 0) {
+    return NULL;
+  }
   int counter = 0;
   string current;
   while (std::string::npos == current.find(searched)){
@@ -251,4 +254,8 @@ void Database::freeSpace(){
 
 void Database::setName(std::string input){
   name = input;
+}
+
+std::string Database::getName(){
+  return name;
 }
