@@ -288,6 +288,7 @@ size_t getSize(string path){
     file.seekg(0, file.end);
     size = (size_t) file.tellg();
     file.seekg(0, file.beg);
+    file.close();
     return size;
   } else {
     return 0;
