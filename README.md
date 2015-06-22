@@ -47,7 +47,7 @@ Tho process the entire project, use the "db" operator. To process a singe file, 
 Using the set command, you can set various file flags:
  - set [filename] [flag] [value]
 Here is a list of flags:
- -w -> Writable (Default: false)
+ - w -> Writable (Default: false)
 Set can also change database settings:
  - set db [attribute]
 Here is a list of attrivutes:
