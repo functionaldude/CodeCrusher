@@ -2,12 +2,12 @@ This Program is still in BETA! Use with caution!. Read the README for detailed i
 
 # Description:
 This program analyzes your C/C++ project, and helps you in many ways. Current features:
--Code/Comment counter
--CodingStandard checker
--Testfile generator
--Plagiat checker (BETA!!)
--Multitasking
--Multi-Core support
+ - Code/Comment counter
+ - CodingStandard checker
+ - Testfile generator
+ - Plagiat checker (BETA!!)
+ - Multitasking
+ - Multi-Core support
 
 ## Usage:
 The basic usage for the program is: [program] [project_file]
