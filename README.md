@@ -1,4 +1,4 @@
-#CodeCrusher 
+#CodeCrusher [![Build Status](https://travis-ci.org/sasvarizoli/CodeCrusher.svg?branch=master)](https://travis-ci.org/sasvarizoli/CodeCrusher)
 
 ##Description:
 This program analyzes your C/C++ project, and helps you in many ways. Current features:
