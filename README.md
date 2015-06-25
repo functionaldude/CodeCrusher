@@ -1,6 +1,6 @@
-This Program is still in BETA! Use with caution!. Read the README for detailed instruction.
+#CodeCrusher 
 
-# Description:
+##Description:
 This program analyzes your C/C++ project, and helps you in many ways. Current features:
  - Code/Comment counter
  - CodingStandard checker
