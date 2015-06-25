@@ -1,6 +1,4 @@
 OUTPUT = codecrusher
-CXX = g++
-CC = gcc
 CXXFLAGS = -O3 -std=c++11
 OBJFLAGS = -O3 -std=c++11 -c
 SRC =
